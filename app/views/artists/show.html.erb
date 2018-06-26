@@ -1,0 +1,10 @@
+<div class="profile">
+  <%=image_tag @artist.main_picture %>
+  <p>Name/Company: <%=@artist.name %></p>
+  <p>Location:<%=@artist.city%> </p>
+  <p>Contact info:<i><%=@artist.email%></i></p>
+  <p>Instagram: <%=@artist.instagram %></p>
+  <p>Phone Number: <%=@artist.phone_number %></p>
+</div>
+
+<p> <%= link_to("Back", artists_path) %> </p>

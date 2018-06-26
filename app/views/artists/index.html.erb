@@ -1,0 +1,10 @@
+<h2>All Artists</h2>
+
+
+<% @artists.each do |artist| %>
+
+
+<p><%= link_to(image_tag(artist.main_picture), "/artists/#{artist.id}") %></p>
+<p> Email: <%= artist.email %></p>
+
+<%end%>
